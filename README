@@ -13,20 +13,18 @@ $dbforge will be setup as well
 Documentopia.com
 
 独立的Active Record
-
+这个是从 CI 2.1.0 中拿出来的Active Record 和数据库类库，使它使用时没有CI依赖
 大胆的配置 database.php
-
 然后 include `active_init.php`
-
 和 $db 将会固定为通常在CI中是 用 $this->db 或者 $this->CI->db
-
 $dbforge 将会启动
-
 Documentopia.com
------------------------
+
 假如`active_init.php`中的$db与你项目中的$db冲突，因为`active_init.php`中的$db是全局变量
 假如将`active_init.php`中的`$db`修改为`$db2`,你只需要将`$db`修改为`$db2`即可,如:
-```
+
+
+```php
 <?php
 /* DOCUMENTOPIA.COM
 ******************************************************************************************
